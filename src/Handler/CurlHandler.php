@@ -37,8 +37,8 @@ class CurlHandler
         }
 
         $easy = $this->factory->create($request, $options);
-        curl_setopt($easy->handle, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
         curl_exec($easy->handle);
+        curl_setopt($easy->handle, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
         $easy->errno = curl_errno($easy->handle);
 
         return CurlFactory::finish($this, $easy, $this->factory);
