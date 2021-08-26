@@ -1,5 +1,5 @@
 {
-    "name": "guzzlehttp/guzzlev4",
+    "name": "guzzlehttpv4/guzzlev4",
     "require": {
         "guzzlehttp/guzzle": "~6.0"
     }
